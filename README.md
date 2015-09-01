@@ -6,4 +6,4 @@ docker build -t <user>/<repo>:<version> .
 
 # Example use case if the image is built and pushed into a repo
 cd "$GO_REPO"
-docker run --rm -it -v "$PWD":/go -w /go quay.io/ukhomeofficedigital/docker-go-gb:latest gb build all
+docker run --rm -it -v "$PWD":/go -w /go quay.io/ukhomeofficedigital/go-gb:1.0.0 gb build all
